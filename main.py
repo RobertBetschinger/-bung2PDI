@@ -1,5 +1,5 @@
 #TextEinlesen
-f = open("encrypted01", "rt")
+f = open("encrypted03", "rt")
 lines = f.readline()
 myBinaryList =[]
 
