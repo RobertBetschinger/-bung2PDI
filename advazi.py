@@ -59,7 +59,7 @@ for x in noPaddingList:
 print("The Result List:")
 print(mydecryptedList)
 
-print("\nNice To Read")
+print("\nNice To Read:")
 print (" ".join(chain.from_iterable(mydecryptedList)))
 
 
