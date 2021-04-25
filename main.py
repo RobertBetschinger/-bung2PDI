@@ -13,6 +13,7 @@ mySecretKey =[]
 mySecretKey = myBinaryList[-10:] #Cooler Slicer von StackOverflow
 print(mySecretKey)
 
+
 #XorAddieren mit gegebener Schlüssellänge
 myXOrList=[]
 for x in range(0,100):

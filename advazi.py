@@ -1,6 +1,6 @@
 from itertools import chain #Only for A Nice Print of the Result
 # TextEinlesen
-f = open("encrypted06", "rt")
+f = open("encrypted05", "rt")
 lines = f.readline()
 myAdvaziList = []
 myAdvaziList = lines.split()
@@ -47,7 +47,8 @@ for x in range(0, 99):
 
 #Remove Padding Bytes
 #I used integer List in the first time, because its easier to handline than Hex List in my Opinion
-noPaddingList = [i for i in myXOrList if i != theNumberofPaddingBytes] #DudeComeON
+#noPaddingList = [i for i in myXOrList if i != theNumberofPaddingBytes] #shoudnt be used this time, because padding bytes can be normal bytes
+noPaddingList = myXOrList[:len(myXOrList)-(theNumberofPaddingBytes -1)]
 
 #Klartext Ausgeben
 mydecryptedList = []
